@@ -1,13 +1,19 @@
 import Vue from 'vue'
-import VueRouter from "vue-router";
-import router from "./routes/routes";
 import App from './components/App.vue';
 
-Vue.use(VueRouter);
+import VueResource from 'vue-resource';
 
 Vue.config.productionTip = false;
+
+Vue.use(VueResource);
+Vue.http.options.root='http://localhost:3000/';
+Vue.http.interceptors.push(request=>{
+
+  request.headers.set('Auth','RAND TOKEN ' + Math.random());
+
+
+});
 new Vue({
   render: h => h(App),
-  router,
 }).$mount('#app')
 
