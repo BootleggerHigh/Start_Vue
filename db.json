@@ -1,0 +1,34 @@
+{
+  "cars": [
+    {
+      "name": "Ford",
+      "year": 2020,
+      "id": 1
+    },
+    {
+      "name": "Mazda",
+      "year": 2015,
+      "id": 2
+    },
+    {
+      "name": "BMW",
+      "year": 2003,
+      "id": 3
+    },
+    {
+      "name": "Tayouta",
+      "year": 2005,
+      "id": 4
+    },
+    {
+      "name": "",
+      "year": 0,
+      "id": 5
+    },
+    {
+      "name": "Mercedes",
+      "year": 2021,
+      "id": 6
+    }
+  ]
+}
